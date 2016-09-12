@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AAE65100"
+    android:id="@+id/action_fragment1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#AAE65100"
+        android:orientation="horizontal"
+        android:id="@+id/headerTextConatiner">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/logosu4"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="2dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="6pt"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+
+                android:text="All buses Towards Campus"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#AAE65100"
+    android:id="@+id/pickTextContainer"
+    android:layout_below="@id/headerTextConatiner"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Pick your Stop.."
+      android:textColor="@color/white"
+      android:id="@+id/pickText"
+      android:layout_marginLeft="18dp"
+      android:layout_marginTop="4dp"
+      />
+
+
+    <Spinner
+        android:id="@+id/to_id"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#AAE65100"
+        android:layout_margin="4dp"
+        android:spinnerMode="dialog"
+        >
+
+    </Spinner>
+
+</LinearLayout>
+
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:id="@+id/submitRouteInfo"
+
+        android:text="Submit!"
+        android:textColor="@color/white"
+        android:layout_below="@id/pickTextContainer"
+        android:background="@drawable/buttondesign"
+        android:layout_centerHorizontal="true"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cardListToCampus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/submitRouteInfo"
+        />
+
+
+
+    <!--<EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitRouteInfo"
+        android:text="TRIAL JAMES STREET"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/infoTime"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoTime"
+        android:text="Westcott Trial"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/infoTimeWestcott"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoTimeWestcott"
+        android:text="TRIAL DRUMLINS"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/infoTimeDrumlins"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoTimeDrumlins"
+        android:text="TRIAL EAST CAMPUS"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/infoTimeEastCampus"
+        android:layout_marginTop="40dp"/>
+
+
+-->
+    </RelativeLayout>
+
+</FrameLayout>

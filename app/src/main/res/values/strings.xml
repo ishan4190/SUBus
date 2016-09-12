@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SUBus</string>
+    <string name="stop_prompt">Select Your Stop</string>
+</resources>
